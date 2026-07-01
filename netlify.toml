@@ -1,0 +1,19 @@
+# Netlify configuration for the CA STUDIO static site.
+# This is a plain HTML/CSS/JS site — no build step required.
+
+[build]
+  # Serve the files straight from the repository root.
+  publish = "."
+  command = ""
+
+# Netlify automatically serves 404.html for missing pages when it is at the
+# publish root, so no custom redirect is needed for that.
+
+# Sensible security headers for a static site.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
