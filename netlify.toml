@@ -1,15 +1,18 @@
-# Netlify configuration for the CA STUDIO static site.
-# This is a plain HTML/CSS/JS site — no build step required.
+# Netlify configuration — Vite + React SPA for CA STUDIO.
 
 [build]
-  # Serve the files straight from the repository root.
-  publish = "."
-  command = ""
+  command = "npm run build"
+  publish = "dist"
 
-# Netlify automatically serves 404.html for missing pages when it is at the
-# publish root, so no custom redirect is needed for that.
+# Single-page-app fallback: serve index.html for any client-side route so
+# deep links like /about or /contact work on refresh. (Netlify handles form
+# POSTs and real files before applying this rule.)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
-# Sensible security headers for a static site.
+# Sensible security headers.
 [[headers]]
   for = "/*"
   [headers.values]

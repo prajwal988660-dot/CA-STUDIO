@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!--
+  Static form definition for Netlify Forms detection.
+  A React SPA renders its form on the client, which Netlify's build-time
+  crawler can't see. This hidden static form (same name + fields) lets
+  Netlify register the "contact" form so client-side submissions are captured.
+-->
+<html lang="en">
+  <head><meta charset="UTF-8" /><title>Netlify form detection</title></head>
+  <body>
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
+  </body>
+</html>
