@@ -22,3 +22,6 @@ Desktop.ini
 .DS_Store
 *.swp
 *~
+
+# Local Netlify folder
+.netlify
