@@ -23,6 +23,8 @@ export default function Footer() {
               <li><Link to="/" className="hover:text-brand-blue">Home</Link></li>
               <li><Link to="/about" className="hover:text-brand-blue">Philosophy</Link></li>
               <li><Link to="/services" className="hover:text-brand-blue">Services</Link></li>
+              <li><Link to="/software" className="hover:text-brand-blue">Software</Link></li>
+              <li><Link to="/pricing" className="hover:text-brand-blue">Pricing</Link></li>
               <li><Link to="/contact" className="hover:text-brand-blue">Contact</Link></li>
             </ul>
           </div>
@@ -34,8 +36,10 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-10 pt-6 border-t border-gray-200/60 text-center text-xs text-brand-muted font-bold tracking-widest uppercase">
-          &copy; {year} CA STUDIO. All Rights Reserved. Engineered for Excellence.
+        <div className="mt-10 pt-6 border-t border-gray-200/60 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-center text-xs text-brand-muted font-bold tracking-widest uppercase">
+          <span>&copy; {year} CA STUDIO. All Rights Reserved. Engineered for Excellence.</span>
+          <span className="hidden sm:inline" aria-hidden="true">&middot;</span>
+          <Link to="/privacy" className="hover:text-brand-blue">Privacy Policy</Link>
         </div>
       </div>
     </footer>

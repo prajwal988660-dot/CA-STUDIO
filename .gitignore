@@ -13,6 +13,9 @@ yarn-error.log*
 # Claude Code local settings
 .claude/settings.local.json
 
+# Content source documents (drafts, not part of the site)
+software content.pdf
+
 # OS / editor cruft
 Thumbs.db
 Desktop.ini

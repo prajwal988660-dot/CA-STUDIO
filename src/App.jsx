@@ -4,6 +4,9 @@ import ScrollToTop from './components/ScrollToTop.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Services from './pages/Services.jsx';
+import Software from './pages/Software.jsx';
+import Pricing from './pages/Pricing.jsx';
+import Privacy from './pages/Privacy.jsx';
 import Contact from './pages/Contact.jsx';
 import Success from './pages/Success.jsx';
 import NotFound from './pages/NotFound.jsx';
@@ -17,6 +20,9 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/software" element={<Software />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/success" element={<Success />} />
           <Route path="*" element={<NotFound />} />
