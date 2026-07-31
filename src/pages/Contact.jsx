@@ -82,22 +82,29 @@ export default function Contact() {
                   official.castud@gmail.com
                 </span>
               </a>
-              {/* TODO: replace with your real phone number */}
-              <a href="tel:+910000000000" className="flex items-center space-x-5 p-5 rounded-2xl bg-white/60 border border-white shadow-sm hover:shadow-md transition-all">
+              <div className="flex items-center space-x-5 p-5 rounded-2xl bg-white/60 border border-white shadow-sm hover:shadow-md transition-all">
                 <span className="w-12 h-12 rounded-xl bg-brand-cyan flex items-center justify-center text-white shadow-inner">📞</span>
                 <span>
                   <span className="block text-xs font-black text-brand-muted uppercase tracking-widest">Call Us</span>
-                  +91 00000 00000
+                  <a href="tel:+917026372221" className="block hover:text-brand-blue transition-colors">+91 70263 72221</a>
+                  <a href="tel:+917026632227" className="block hover:text-brand-blue transition-colors">+91 70266 32227</a>
                 </span>
-              </a>
-              {/* TODO: replace with your real address / city */}
-              <div className="flex items-center space-x-5 p-5 rounded-2xl bg-white/60 border border-white shadow-sm">
+              </div>
+              <a
+                href="https://maps.app.goo.gl/L2VxZ1wsqEwLzn6p9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-5 p-5 rounded-2xl bg-white/60 border border-white shadow-sm hover:shadow-md transition-all"
+              >
                 <span className="w-12 h-12 rounded-xl bg-brand-text flex items-center justify-center text-white shadow-inner">📍</span>
                 <span>
                   <span className="block text-xs font-black text-brand-muted uppercase tracking-widest">Location</span>
-                  Your City, India
+                  <span className="block text-base leading-snug">
+                    2nd Floor, BSR Memoirs, No 15 &amp; 16, New BEL Road, Mathikere, Bengaluru, Karnataka 560094
+                  </span>
+                  <span className="block text-xs font-bold text-brand-blue mt-1">Open in Google Maps &rarr;</span>
                 </span>
-              </div>
+              </a>
             </div>
           </div>
 

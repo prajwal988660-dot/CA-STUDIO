@@ -32,6 +32,8 @@ export default function Footer() {
             <h4 className="text-xs font-black uppercase tracking-widest text-brand-muted mb-4">Get in touch</h4>
             <ul className="space-y-2 font-semibold text-brand-text">
               <li><a href="mailto:official.castud@gmail.com" className="hover:text-brand-blue">official.castud@gmail.com</a></li>
+              <li><a href="tel:+917026372221" className="hover:text-brand-blue">+91 70263 72221</a></li>
+              <li><a href="tel:+917026632227" className="hover:text-brand-blue">+91 70266 32227</a></li>
               <li><Link to="/contact" className="hover:text-brand-blue">Book a consultation &rarr;</Link></li>
             </ul>
           </div>
