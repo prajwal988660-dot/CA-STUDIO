@@ -1,4 +1,50 @@
-# CA STUDIO — Website
+# CA Studio — Interactive Firm Website
+
+> A fast, interactive single-page marketing site for a Chartered Accountancy firm, built
+> with React and Vite and deployed as a static SPA on Netlify.
+
+<p>
+  <img alt="React" src="https://img.shields.io/badge/React%2018-61DAFB?logo=react&logoColor=black">
+  <img alt="Vite" src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white">
+  <img alt="React Router" src="https://img.shields.io/badge/React%20Router-CA4245?logo=reactrouter&logoColor=white">
+  <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white">
+  <img alt="Netlify" src="https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white">
+</p>
+
+---
+
+## ✨ Highlights
+
+- **Single-page app** — client-side routing with React Router 6 for instant navigation and no full-page reloads, with an SPA fallback so deep links survive a refresh.
+- **Hand-built interactions** — scroll-reveal animations via `IntersectionObserver`, animated count-up statistics, an expandable FAQ accordion, a floating back-to-top button, and a stateful responsive mobile menu, each as a reusable component.
+- **Real contact form** — live client-side validation plus Netlify Forms submission (with the static-form workaround that lets Netlify's crawler register an SPA form).
+- **Production build pipeline** — Vite build to a static `dist/`, deployed on Netlify with automatic redeploys on every push to `main`.
+- **Compiled Tailwind** — Tailwind CSS 3 compiled at build time (not CDN) with custom glass/gradient styling.
+
+## 🧰 Tech Stack
+
+| Layer | Technologies |
+| --- | --- |
+| **Framework** | React 18, React Router 6 |
+| **Build** | Vite |
+| **Styling** | Tailwind CSS 3 (compiled), custom CSS |
+| **Hosting** | Netlify (static SPA + Netlify Forms) |
+
+## 🚀 Quick Start
+
+```bash
+npm install     # once
+npm run dev     # http://localhost:5173  (hot reload)
+npm run build   # static site -> dist/
+```
+
+Full project structure, deployment, and contact-form details are below.
+
+---
+
+<details>
+<summary><strong>📖 Full documentation</strong> (click to expand)</summary>
+
 
 An **interactive** marketing site for **CA STUDIO** (Chartered Accountancy services),
 built as a single-page app with **Vite + React + React Router + Tailwind CSS**.
@@ -79,3 +125,5 @@ In `src/pages/Contact.jsx` (and wherever they appear):
 - **Address / city** — currently `Your City, India`
 
 The contact email is `official.castud@gmail.com`.
+
+</details>
